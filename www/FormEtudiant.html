@@ -1,0 +1,108 @@
+<html>
+<head>
+	<!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+	<title>Inscription Entreprise</title>
+</head>
+
+<body>
+<nav>
+	<div class="nav-wrapper">
+		<a class="brand-logo center"><i class="material-icons">work</i>TinderJOB</a>
+	</div>
+</nav>
+
+<h5>Formulaire d'Inscription</h5>
+<div class="row subscription_form">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="nom" type="text" class="validate">
+				<label for="nom">Nom</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="prenom" type="text" class="validate">
+				<label for="prenom">Prénom</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="date" type="text" class="validate" placeholder="JJ/MM/AAAA">
+				<label for="date">Date de naissance</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="adresse" class="materialize-textarea"></textarea>
+				<label for="adresse">Adresse Postale</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="zipcode" type="text" class="validate">
+				<label for="zipcode">Code Postal</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="ville" type="text" class="validate">
+				<label for="ville">Ville</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="tel" type="text" class="validate">
+				<label for="tel">Téléphone</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="email" type="email" class="validate">
+				<label for="email" data-error="wrong" data-success="right">Login</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="password" type="password" class="validate">
+				<label for="password">Password</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="experience" type="text" class="validate">
+				<label for="experience">Expérience</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="duree" type="text" class="validate">
+				<label for="duree">Durée</label>
+			</div>
+		</div>
+	</form>
+</div>
+<a href="mainpage.html" class="waves-effect waves-light btn-large">S'inscrire</a>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
