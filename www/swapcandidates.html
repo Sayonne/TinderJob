@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/jTinder.css">
+    <title>TinderJOB</title>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo center"><i class="material-icons">work</i>TinderJOB</a>
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView background">
+                <img class="circle profil_img" src="img/profil_img.jpg">
+                <a href="profil.html"><span class="name">Nom Entreprise</span></a>
+            </div></li>
+            <li><a href="announces.html">Mes annonces</a></li>
+            <li><a href="postannounce.html">Poster une annonce</a></li>
+            <li><a href="logout.html">Déconnexion</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<h4>Intitulé du Stage</h4>
+<div class="wrap1">
+    <div id="tinderslide">
+        <ul>
+            <li class="pane1">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">Prénom NOM</span>
+                        <p>Niveau actuel : Bac+0<br />
+                            Durée de stage recherchée : 0 mois</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Télécharger le CV du candidat.</a>
+                    </div>
+                </div>
+            </li>
+            <li class="pane2">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">Prénom NOM</span>
+                        <p>Niveau actuel : Bac+0<br />
+                            Durée de stage recherchée : 0 mois</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Télécharger le CV du candidat.</a>
+                    </div>
+                </div>
+            </li>
+            <li class="pane3">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">Prénom NOM</span>
+                        <p>Niveau actuel : Bac+0<br />
+                            Durée de stage recherchée : 0 mois</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Télécharger le CV du candidat.</a>
+                    </div>
+                </div>
+            </li>
+            <li class="pane4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">Prénom NOM</span>
+                        <p>Niveau actuel : Bac+0<br />
+                            Durée de stage recherchée : 0 mois</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Télécharger le CV du candidat.</a>
+                    </div>
+                </div>
+            </li>
+            <li class="pane5">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">Prénom NOM</span>
+                        <p>Niveau actuel : Bac+0<br />
+                        Durée de stage recherchée : 0 mois</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Télécharger le CV du candidat.</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="actions">
+    <a href="#" class="btn-floating btn-large waves-effect waves-light green like" id="like1"><i class="material-icons">reply</i></a>
+    <a href="#" class="btn-floating btn-large waves-effect waves-light red dislike" id="dislike1"><i class="material-icons">clear</i></a>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/jquery.transform2d.js"></script>
+<script type="text/javascript" src="js/jquery.jTinder.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -67,7 +67,7 @@ body {
     text-align: left;
 }
 
-.subscription_form {
+.subscription_form, .announces_form, .announces_list {
     text-align: left;
 }
 
@@ -76,12 +76,20 @@ body {
     margin-right: auto;
 }
 
-.sub_buttons {
+.sub_buttons, .ann_buttons {
     margin-top: 50%;
 }
 
-.btn_entreprise {
+.btn_entreprise, .btn_annonces {
     margin-bottom: 10%;
+}
+
+#like, #save {
+    margin-right: 15%;
+}
+
+#like1 {
+    margin-right: 30%;
 }
 
 /* Portrait layout (default) */
