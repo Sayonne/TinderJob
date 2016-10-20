@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/material-icons.css">
+        <link rel="stylesheet" type="text/css" href="css/jTinder.css">
+        <title>TinderJOB</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a class="brand-logo center"><i class="material-icons">work</i>TinderJOB</a>
+                <ul id="slide-out" class="side-nav">
+                    <li><div class="userView background">
+                        <img class="circle profil_img" src="img/profil_img.jpg">
+                        <a href="profil.html"><span class="name">Prénom NOM</span></a>
+                    </div></li>
+                    <li><a href="history.html">Historique</a></li>
+                    <li><a href="search.html">Recherche</a></li>
+                    <li><a href="logout.html">Déconnexion</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="wrap">
+            <div id="tinderslide">
+                <ul>
+                    <li class="pane1">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/no_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                                <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pane2">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/no_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                                <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pane3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/no_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                                <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pane4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/no_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                                <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pane5">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/no_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                                <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="#" class="btn-floating btn-large waves-effect waves-light green like" id="like"><i class="material-icons">reply</i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light blue save"><i class="material-icons">file_download</i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light red dislike" id="dislike"><i class="material-icons">clear</i></a>
+        </div>
+        <!-- <div id="tinderslide">
+            <ul>
+                <li class="pane2"><div class="img"></div><div>San Francisco</div><div class="like"></div><div class="dislike"></div></li>
+                <li class="pane3"><div class="img"></div><div>Chicago</div><div class="like"></div><div class="dislike"></div></li>
+                <li class="pane4"><div class="img"></div><div>New York</div><div class="like"></div><div class="dislike"></div></li>
+                <li class="pane5"><div class="img"></div><div>Beach</div><div class="like"></div><div class="dislike"></div></li>
+                <li class="pane1">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/no_image.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title grey-text text-darken-4"><a href="">Intitulé du stage</a></span>
+                            <p>Multatio detortum et lituis et veri non capitum a carnifex et a sequester veri oportunum nullo noxiorum provincias capitum Parthica carnifex discernente vel.</p>
+                            <a href="index.html">Click here</a>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="dislike"><i></i></a>
+                        <a href="#" class="like"><i></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+        <script type="text/javascript" src="js/jquery.jTinder.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
